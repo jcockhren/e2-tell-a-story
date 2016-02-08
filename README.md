@@ -24,9 +24,9 @@ Then run http-server or localhost in the main directory.
 
 ## Contributors
 
-Wiley Walker - @Wiley-Walker
-Walker Dorris - @walkerdorris
-Alejandro Gutierrez - @alexgtz17
+* Wiley Walker - @Wiley-Walker
+* Walker Dorris - @walkerdorris
+* Alejandro Gutierrez - @alexgtz17
 
 ## License
 
