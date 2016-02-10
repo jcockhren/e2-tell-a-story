@@ -1,21 +1,54 @@
 <md-toolbar layout="row" layout-align="center">
+  <md-button hide-gt-sm ng-click="$mdMedia('gt-sm').toggle()" ng-animate="animate">
+    <md-icon md-font-library="material-icons">menu</md-icon>
+  </md-button>
   <h1>Data Viz</h1>
 </md-toolbar>
-<md-content>
-  <br>
-  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
-    <md-button class="md-raised md-primary">Graph 1</md-button>
-    <md-button class="md-raised md-primary">Graph 2</md-button>
-    <md-button class="md-raised md-primary">Graph 3</md-button>
-  </section>
-  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
-    <md-button class="md-raised md-primary">Graph 4</md-button>
-    <md-button class="md-raised md-primary">Graph 5</md-button>
-    <md-button class="md-raised md-primary">Graph 6</md-button>
-  </section>
-  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
-    <md-button class="md-raised md-primary">Graph 7</md-button>
-    <md-button class="md-raised md-primary">Graph 8</md-button>
-    <md-button class="md-raised md-primary">Graph 9</md-button>
-  </section>
-</md-content>
+
+<div flex layout="row">
+  <md-sidenav layout="column"
+              md-is-locked-open="$mdMedia('gt-sm')"
+              md-content-id="left"
+              class="md-whiteframe-z2">
+    <md-button ng-click="mainCtrl.graph=1">
+      Graph 1
+    </md-button>
+    <md-button ng-click="mainCtrl.graph=2">
+      Graph 2
+    </md-button>
+    <md-button ng-click="mainCtrl.graph=3">
+      Graph 3
+    </md-button>
+    <md-button ng-click="mainCtrl.graph=4">
+      Graph 4
+    </md-button>
+    <md-button ng-click="mainCtrl.graph=5">
+      Graph 5
+    </md-button>
+    <md-button ng-click="mainCtrl.graph=6">
+      Graph 6
+    </md-button>
+    <md-button ng-click="mainCtrl.graph=7">
+      Graph 7
+    </md-button>
+    <md-button ng-click="mainCtrl.graph=8">
+      Graph 8
+    </md-button>
+    <md-button ng-click="mainCtrl.graph=9">
+      Graph 9
+    </md-button>
+  </md-sidenav>
+
+  <md-content flex id="content" ng-switch on="mainCtrl.graph">
+    <h2 ng-switch-when="1">Content 1</h2>
+    <h2 ng-switch-when="2">Content 2</h2>
+    <h2 ng-switch-when="3">Content 3</h2>
+    <h2 ng-switch-when="4">Content 4</h2>
+    <h2 ng-switch-when="5">Content 5</h2>
+    <h2 ng-switch-when="6">Content 6</h2>
+    <h2 ng-switch-when="7">Content 7</h2>
+    <h2 ng-switch-when="8">Content 8</h2>
+    <h2 ng-switch-when="9">Content 9</h2>
+    <h2 ng-switch-default>Default</h2>
+  </md-content>
+</div>

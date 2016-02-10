@@ -2,7 +2,7 @@
   "use strict";
 
   angular
-    .module("Data-Viz-App", ["ngRoute", "ngResource", "ngMaterial"]);
+    .module("Data-Viz-App", ["ngRoute", "ngResource", "ngMaterial", "ngAnimate"]);
 
   angular
     .module("Data-Viz-App")
