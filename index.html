@@ -2,11 +2,37 @@
 <html>
 <head>
   <title>Data-Viz</title>
-  <link rel="stylesheet" type="text/css" href="lib/bower_components/angular-material/angular-material.css"
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="lib/bower_components/angular-material/angular-material.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body ng-app="Data-Viz-App">
-  <div ng-view class="container"></div>
+<body layout="column" ng-app="Data-Viz-App">
+
+  <md-toolbar layout="row" layout-align="center">
+    <md-button hide-gt-sm>
+      <md-icon md-font-library="material-icons">menu</md-icon>
+    </md-button>
+    <h1>Data Viz</h1>
+  </md-toolbar>
+
+  <div flex layout="row">
+    <md-sidenav layout="column"
+                md-is-locked-open="$mdMedia('gt-sm')"
+                md-content-id="left"
+                class="md-whiteframe-z2">
+      <md-button href="#/AxisRotation">Axis Rotation</md-button>
+      <md-button href="">Graph 2</md-button>
+      <md-button href="">Graph 3</md-button>
+      <md-button href="">Graph 4</md-button>
+      <md-button href="">Graph 5</md-button>
+      <md-button href="">Graph 6</md-button>
+      <md-button href="">Graph 7</md-button>
+      <md-button href="">Graph 8</md-button>
+      <md-button href="">Graph 9</md-button>
+    </md-sidenav>
+
+    <md-content flex id="content" ng-view></md-content>
+  </div>
 
   <!-- libraries -->
   <!-- angular -->

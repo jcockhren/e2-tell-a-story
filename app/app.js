@@ -2,7 +2,7 @@
   "use strict";
 
   angular
-    .module("Data-Viz-App", ["ngRoute", "ngResource", "ngMaterial"]);
+    .module("Data-Viz-App", ["ngRoute", "ngResource", "ngMaterial", "ngAnimate"]);
 
   angular
     .module("Data-Viz-App")
@@ -11,6 +11,9 @@
       $routeProvider
       .when('/', {
         templateUrl: './partials/main.html',
+        controller: 'MainCtrl as mainCtrl'
+      }).when("/AxisRotation", {
+        templateUrl: "./partials/AxisRotation.html",
         controller: 'MainCtrl as mainCtrl'
       }).otherwise('/');
     }
