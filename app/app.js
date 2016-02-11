@@ -12,6 +12,9 @@
       .when('/', {
         templateUrl: './partials/main.html',
         controller: 'MainCtrl as mainCtrl'
+      }).when("/AxisRotation", {
+        templateUrl: "./partials/AxisRotation.html",
+        controller: 'MainCtrl as mainCtrl'
       }).otherwise('/');
     }
   ]);
