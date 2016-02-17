@@ -14,7 +14,7 @@
         controller: 'MainCtrl as mainCtrl'
       }).when("/AxisRotation", {
         templateUrl: "./partials/AxisRotation.html",
-        controller: 'MainCtrl as mainCtrl'
+        controller: 'OwnAxisRotationCtrl as ownAxisRotationCtrl'
       }).when("/Gravity", {
         templateUrl: "./partials/gravity-chart.html",
         controller: "GravityCtrl as gravityCtrl"
