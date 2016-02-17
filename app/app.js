@@ -15,6 +15,9 @@
       }).when("/AxisRotation", {
         templateUrl: "./partials/AxisRotation.html",
         controller: 'MainCtrl as mainCtrl'
+      }).when("/Orbit", {
+        templateUrl: "./partials/orbit.html",
+        controller: "OrbitCtrl as orbitCtrl"
       }).otherwise('/');
     }
   ]);
