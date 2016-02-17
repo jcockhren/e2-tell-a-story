@@ -51,7 +51,7 @@
 					.attr("y", 6)
 					.attr("dy", ".71em")
 					.style("text-anchor", "end")
-					.text("Frequency");
+					.text("Gravity (m/s^2)");
 
 			svg.selectAll(".bar")
 					.data(data)
