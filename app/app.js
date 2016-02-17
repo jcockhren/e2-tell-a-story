@@ -15,6 +15,10 @@
       }).when("/AxisRotation", {
         templateUrl: "./partials/AxisRotation.html",
         controller: 'MainCtrl as mainCtrl'
+      }).when("/Gravity", {
+        templateUrl: "./partials/gravity-chart.html",
+        controller: "GravityCtrl as gravityCtrl",
+        css: "css/gravity-chart.css"
       }).otherwise('/');
     }
   ]);

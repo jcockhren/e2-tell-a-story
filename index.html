@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Data-Viz</title>
+  <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="lib/bower_components/angular-material/angular-material.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -21,7 +22,7 @@
                 md-content-id="left"
                 class="md-whiteframe-z2">
       <md-button href="#/AxisRotation">Axis Rotation</md-button>
-      <md-button href="">Graph 2</md-button>
+      <md-button href="#/Gravity">Gravity</md-button>
       <md-button href="">Graph 3</md-button>
       <md-button href="">Graph 4</md-button>
       <md-button href="">Graph 5</md-button>
@@ -35,6 +36,7 @@
   </div>
 
   <!-- libraries -->
+  <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <!-- angular -->
   <script src="lib/bower_components/angular/angular.js"></script>
   <script src="lib/bower_components/angular-animate/angular-animate.js"></script>
@@ -46,5 +48,6 @@
   <!-- app-specific scripts -->
   <script src="app/app.js"></script>
   <script src="app/controllers/mainCtrl.js"></script>
+  <script src="app/controllers/gravityCtrl.js"></script>
 </body>
 </html>
